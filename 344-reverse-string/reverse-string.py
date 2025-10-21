@@ -3,8 +3,9 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        rev=s.reverse()
-        print(rev)
-
-
-        
+        # temp=[]
+        # for i in s:
+        #     temp.append(i)
+        # s=temp
+        # return s
+        s.reverse()
