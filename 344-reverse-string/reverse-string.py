@@ -3,9 +3,12 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        # temp=[]
-        # for i in s:
-        #     temp.append(i)
-        # s=temp
-        # return s
-        s.reverse()
+        temp=[]
+        for i in range(len(s)-1,-1,-1):
+            temp.append(s[i])
+        s[:]=temp
+        return s
+
+        # s.reverse()
+
+        # s[:]=s[::-1]
