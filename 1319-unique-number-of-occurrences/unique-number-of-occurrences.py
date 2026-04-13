@@ -16,7 +16,13 @@ class Solution:
         # return True
 
 
-        counts=Counter(arr).values()
-        return len(counts) == len(set(counts))
+        # counts=Counter(arr).values()
+        # return len(counts) == len(set(counts))
+
+        counts={}
+        for x in arr:
+            counts[x] = counts.get(x,0)+1
+        freq=counts.values()
+        return len(freq) == len(set(freq))
             
             
